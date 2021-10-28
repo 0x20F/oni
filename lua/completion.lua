@@ -1,8 +1,12 @@
 -- Setup nvim-cmp
 local cmp = require 'cmp'
+local lspkind = require 'lspkind'
 
 
 cmp.setup({
+        formatting = {
+                format = lspkind.cmp_format({ with_text = true, maxwidth = 50 })
+        },
         sources = cmp.config.sources(
                 {
                         { name = 'nvim_lsp' },
