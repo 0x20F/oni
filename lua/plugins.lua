@@ -41,6 +41,7 @@ packer.startup(function()
         -- Install new servers with ':LspInstall <server>'
         -- it'll autocomplete all the available servers
         use 'neovim/nvim-lspconfig'
+        use 'onsails/lspkind-nvim'
         use 'williamboman/nvim-lsp-installer'
         use 'hrsh7th/cmp-nvim-lsp'
         use 'hrsh7th/cmp-buffer'
@@ -53,6 +54,13 @@ packer.startup(function()
         use 'nvim-lua/plenary.nvim'
         use 'nvim-lua/telescope.nvim'
         use 'jremmen/vim-ripgrep'
+
+        -- File browser
+        use { 
+                'kyazdani42/nvim-tree.lua',
+                requires = 'kyazdani42/nvim-web-devicons',
+                config = function() require 'nvim-tree'.setup {} end                
+        }
 
         end
 )
