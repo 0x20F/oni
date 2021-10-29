@@ -21,13 +21,8 @@ local insert = 'i'
 -- {key} the keyboard combo to map
 -- {result} what should happen when the combo is hit
 local map = function(modes, key, result)
-    for mode = 1, #modes do
-        vim.api.nvim_set_keymap(
-            mode,
-            key,
-            result,
-            { noremap = true, silent = true }
-        )
+    for _, mode in ipairs(modes) do
+        vim.api.nvim_set_keymap(mode, key, result, { noremap = true, silent = true })
     end
 end
 
@@ -38,7 +33,7 @@ vim.g.mapleader = ' '
 
 
 -- File tree toggle
-map(normal, '<leader>a', ':NvimTreeToggle<cr>')
+map({ normal }, '<leader>a', ':NvimTreeToggle<cr>')
 
 
 -- Telescope bindings
