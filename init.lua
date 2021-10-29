@@ -1,3 +1,17 @@
+--
+--
+-- ███╗   ██╗██╗   ██╗██╗███╗   ███╗
+-- ████╗  ██║██║   ██║██║████╗ ████║
+-- ██╔██╗ ██║██║   ██║██║██╔████╔██║
+-- ██║╚██╗██║╚██╗ ██╔╝██║██║╚██╔╝██║
+-- ██║ ╚████║ ╚████╔╝ ██║██║ ╚═╝ ██║
+-- ╚═╝  ╚═══╝  ╚═══╝  ╚═╝╚═╝     ╚═╝
+--
+--
+
+
+
+
 require('lua/plugins')
 require('lua/tree-sitter')
 require('lua/completion')
@@ -15,6 +29,7 @@ options.showmatch = true	-- Highlight matching [{()}]
 options.hlsearch = true		-- Highlight matches when searching
 options.cursorline = true	-- Highlight current line
 options.background = 'dark' -- Tell the them to use its dark colors
+options.wrap = false        -- Don't wrap really long lines
 vim.g.colors_name = 'one'   -- Set the colorscheme
 
 
