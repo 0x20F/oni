@@ -3,6 +3,6 @@
 </p>
 
 
-<h1 align="center">nvim</h1>
+<h1 align="center">oni</h1>
 
 <p align="center">My own neovim setup and configuration files </p>
