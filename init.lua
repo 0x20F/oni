@@ -8,6 +8,7 @@ local options = vim.opt
 options.smartindent = true	-- Indent based on programming language
 options.autoindent = true	-- For autoindent
 options.tabstop = 4		    -- Number of visual spaces per tab
+options.shiftwidth = 4      -- Indents will have a width of 4
 options.expandtab = true	-- Tabs to spaces
 options.number = true		-- Show line numbers
 options.showmatch = true	-- Highlight matching [{()}]

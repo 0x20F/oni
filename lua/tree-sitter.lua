@@ -5,8 +5,8 @@ local configs = require 'nvim-treesitter.configs'
 -- use ':TSInstall {language}' tab completion available
 -- use ':TSInstallInfo' to see what parsers are installed
 configs.setup {
-        ensure_installed = 'maintained',
-        highlight = {
-                enable = true,
-        }
+    ensure_installed = 'maintained',
+    highlight = {
+        enable = true,
+    }
 }

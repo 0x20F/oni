@@ -4,38 +4,38 @@ local lspkind = require 'lspkind'
 
 
 cmp.setup({
-        formatting = {
-                format = lspkind.cmp_format({ with_text = true, maxwidth = 50 })
+    formatting = {
+        format = lspkind.cmp_format({ with_text = true, maxwidth = 50 })
+    },
+    sources = cmp.config.sources(
+        {
+            { name = 'nvim_lsp' },
         },
-        sources = cmp.config.sources(
-                {
-                        { name = 'nvim_lsp' },
-                },
-                {
-                        { name = 'buffer' }
-                }
-        )
+        {
+            { name = 'buffer' }
+        }
+    )
 })
 
 
 -- Use buffer source for '/'.
 cmp.setup.cmdline('/', {
-        sources = {
-                { name = 'buffer' }
-        }
+    sources = {
+        { name = 'buffer' }
+    }
 })
 
 
 -- Use cmdline & path source for ':'
 cmp.setup.cmdline(':', {
-        sources = cmp.config.sources(
-                {
-                        { name = 'path' }
-                },
-                {
-                        { name = 'cmdline' }
-                }
-        )
+    sources = cmp.config.sources(
+        {
+            { name = 'path' }
+        },
+        {
+            { name = 'cmdline' }
+        }
+    )
 })
 
 
@@ -49,8 +49,9 @@ lsp.tsserver.setup { capabilities = capabilities }
 local lsp_installer = require 'nvim-lsp-installer'
 
 lsp_installer.on_server_ready(function(server)
-        local opts = {}
+    local opts = {}
 
-        server:setup(opts)
-        vim.cmd [[ do User LspAttachBuffers ]]
+    server:setup(opts)
+    vim.cmd [[ do User LspAttachBuffers ]]
 end)
+
