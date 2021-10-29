@@ -37,6 +37,9 @@ vim.g.colors_name = 'one'   -- Set the colorscheme
 vim.cmd "set termguicolors"
 
 -- Normal highlight command won't work so autokey it
-vim.cmd[[ au VimEnter * highlight LineNr guibg=none ctermbg=none ]]
-vim.cmd[[ au VimEnter * highlight Normal guibg=none ctermbg=none ]]
+vim.cmd [[ au VimEnter * highlight LineNr guibg=none ctermbg=none ]]
+vim.cmd [[ au VimEnter * highlight Normal guibg=none ctermbg=none ]]
+
+-- Override the default fuzzy finder for the 'dashboard' plugin
+vim.cmd [[ let g:dashboard_default_executive = 'telescope' ]]
 

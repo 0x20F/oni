@@ -42,6 +42,12 @@ packer.init({
 packer.startup(function()
     local use = use
 
+
+    -- Start screen
+    use 'glepnir/dashboard-nvim'
+
+    -- Tree Sitter for better language parsing
+    -- and tokenizing. Polyglot as backup
     use 'nvim-treesitter/nvim-treesitter'
     use 'sheerun/vim-polyglot'
 
