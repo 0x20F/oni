@@ -12,9 +12,9 @@
 
 
 
-require('lua/plugins')
-require('lua/tree-sitter')
-require('lua/completion')
+require('core.plugins')
+require('core.tree-sitter')
+require('core.completion')
 
 
 local options = vim.opt

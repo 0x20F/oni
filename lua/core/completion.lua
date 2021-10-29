@@ -18,6 +18,8 @@ local lspkind = require 'lspkind'
 
 
 cmp.setup({
+    -- Add icons and all the nice things
+    -- with lspkind
     formatting = {
         format = lspkind.cmp_format({ with_text = true, maxwidth = 50 })
     },
@@ -63,7 +65,9 @@ lsp.tsserver.setup { capabilities = capabilities }
 local lsp_installer = require 'nvim-lsp-installer'
 
 lsp_installer.on_server_ready(function(server)
-    local opts = {}
+    local opts = {
+        capabilities = capabilities
+    }
 
     server:setup(opts)
     vim.cmd [[ do User LspAttachBuffers ]]
