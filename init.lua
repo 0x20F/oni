@@ -37,15 +37,15 @@ require('misc.dashboard')
 
 local options = vim.opt
 
-options.smartindent = true	-- Indent based on programming language
-options.autoindent = true	-- For autoindent
-options.tabstop = 4		    -- Number of visual spaces per tab
+options.smartindent = true  -- Indent based on programming language
+options.autoindent = true   -- For autoindent
+options.tabstop = 4         -- Number of visual spaces per tab
 options.shiftwidth = 4      -- Indents will have a width of 4
-options.expandtab = true	-- Tabs to spaces
-options.number = true		-- Show line numbers
-options.showmatch = true	-- Highlight matching [{()}]
-options.hlsearch = true		-- Highlight matches when searching
-options.cursorline = true	-- Highlight current line
+options.expandtab = true    -- Tabs to spaces
+options.number = true       -- Show line numbers
+options.showmatch = true    -- Highlight matching [{()}]
+options.hlsearch = true     -- Highlight matches when searching
+options.cursorline = true   -- Highlight current line
 options.background = 'dark' -- Tell the them to use its dark colors
 options.wrap = false        -- Don't wrap really long lines
 vim.g.colors_name = 'one'   -- Set the colorscheme
