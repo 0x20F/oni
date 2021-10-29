@@ -28,7 +28,7 @@ A lot of plugins... Here are the links for the most _general_ ones, the rest in 
 - [`dashboard-nvim`](https://github.com/glepnir/dashboard-nvim) - Clean looking start page when running without any parameters
 - [`nvim-treesitter`](https://github.com/nvim-treesitter/nvim-treesitter) - Better syntax highlighting. (Install servers with `:TSInstall`)
 - [`vim-prettier`](https://github.com/prettier/vim-prettier) - File formatter
-- [`telescope.nvim`](https://github.com/nvim-telescope/telescope.nvim) - [[Fuzzy finder]] for literally anything
+- [`telescope.nvim`](https://github.com/nvim-telescope/telescope.nvim) - Fuzzy finder for literally anything
 - [`nvim-tree.lua`](https://github.com/kyazdani42/nvim-tree.lua) - Pretty file browser
 
 Honorable mentions: [`lspkind-nvim`](https://github.com/onsails/lspkind-nvim), [`nvim-lsp-installer`](https://github.com/williamboman/nvim-lsp-installer)
