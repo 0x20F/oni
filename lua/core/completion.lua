@@ -56,18 +56,22 @@ cmp.setup.cmdline(':', {
 
 
 -- Setup lspconfig
+-- Add/Configure language servers here
 local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
 
 local lsp = require 'lspconfig'
 lsp.tsserver.setup { capabilities = capabilities }
+lsp.rust_analyzer.setup { capabilities = capabilities }
 
 
+
+-- Initialize easy installer
 local lsp_installer = require 'nvim-lsp-installer'
 
+-- Automatically setup newly installed server
+-- for the file that's currently opened
 lsp_installer.on_server_ready(function(server)
-    local opts = {
-        capabilities = capabilities
-    }
+    local opts = { capabilities = capabilities }
 
     server:setup(opts)
     vim.cmd [[ do User LspAttachBuffers ]]
