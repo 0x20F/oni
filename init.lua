@@ -34,6 +34,7 @@ require('core.completion')
 require('core.keys')
 
 require('misc.dashboard')
+require('misc.statusline')
 
 
 local options = vim.opt

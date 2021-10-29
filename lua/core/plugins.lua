@@ -82,5 +82,8 @@ packer.startup(function()
         config = function() require 'nvim-tree'.setup {} end
     }
 
+    -- Status line
+    use 'ojroques/nvim-hardline'
+
     end
 )
