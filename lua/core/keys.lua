@@ -45,7 +45,9 @@ map({ normal }, '<C-f>', ':lua require"telescope.builtin".live_grep()<cr>')
 
 -- Split bindings
 map({ normal }, '<leader>j', ':split<cr>')
+map({ normal }, '<leader>k', ':split<cr>')
 map({ normal }, '<leader>l', ':vsplit<cr>')
+map({ normal }, '<leader>h', ':vsplit<cr>')
 
 -- Quit like in vscode, whenever
 map({ normal, insert }, '<C-w>', '<esc>:q<cr>')
