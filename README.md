@@ -6,9 +6,7 @@
 <h1 align="center">oni</h1>
 
 <p align="center">Personal nvim configuration structure and documentation. An ever growing list of cool things that can be done with nvim...</p>
-
-<br/>
-<br/>
+<br/><br/>
 
 ## Directory Structure
 - `~/.config/nvim`
@@ -17,8 +15,8 @@
 		- `core` - Directory for all _basic_ modules that make everything work
 			- `completion.lua`: This is where are the language servers are setup and configured.
 			- `keys.lua`: All the key mappings
-			- `plugins.lua`: All [[Packer]] configuration together with all [[#2 Plugins]] that should be installed, this includes themes.
-			- `tree-sitter.lua`: [[Tree-Sitter]] configuration. More language servers for nicer syntax highlighting.
+			- `plugins.lua`: All Packer configuration together with all #2 Plugins that should be installed, this includes themes.
+			- `tree-sitter.lua`: Tree-Sitter configuration. More language servers for nicer syntax highlighting.
 		- `misc` - Small quality of life tweaks, nothing that messes with the editor usage itself.
 			- `dashboard.lua`: Dashboard banner and settings
 			- `statusline.lua`: Statusline setup and configuration
@@ -33,7 +31,7 @@ A lot of plugins... Here are the links for the most _general_ ones, the rest in 
 - [`dashboard-nvim`](https://github.com/glepnir/dashboard-nvim) - Clean looking start page when running without any parameters
 - [`nvim-treesitter`](https://github.com/nvim-treesitter/nvim-treesitter) - Better syntax highlighting. (Install servers with `:TSInstall`)
 - [`vim-prettier`](https://github.com/prettier/vim-prettier) - File formatter
-- [`telescope.nvim`](https://github.com/nvim-telescope/telescope.nvim) - [[Fuzzy finder]] for literally anything
+- [`telescope.nvim`](https://github.com/nvim-telescope/telescope.nvim) - Fuzzy finder for literally anything
 - [`nvim-tree.lua`](https://github.com/kyazdani42/nvim-tree.lua) - Pretty file browser
 - [`nvim-hardline`](https://github.com/ojroques/nvim-hardline) - Status line at the bottom of the editor
 
@@ -60,4 +58,3 @@ Honorable mentions: [`lspkind-nvim`](https://github.com/onsails/lspkind-nvim), [
 |  `Control w`  | Close currently focused file                                  | `n`, `i` |
 | `Alt j/k/h/l` | Move between split panes (down, up, left, right) respectively | `n`, `i` |
 |  `Control s`  | Save the currently focused file                               | `n`, `i`, `v`         |
-
