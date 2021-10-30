@@ -76,11 +76,14 @@ packer.startup(function()
     use 'jremmen/vim-ripgrep'
 
     -- File browser
-    use { 
+    use {
         'kyazdani42/nvim-tree.lua',
         requires = 'kyazdani42/nvim-web-devicons',
         config = function() require 'nvim-tree'.setup {} end
     }
+
+    -- Status line
+    use 'ojroques/nvim-hardline'
 
     end
 )
