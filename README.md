@@ -21,7 +21,9 @@
 			- `dashboard.lua`: Dashboard banner and settings
 			- `statusline.lua`: Statusline setup and configuration
 
+
 <br/>
+
 
 ## Plugins
 A lot of plugins... Here are the links for the most _general_ ones, the rest in `lua/core/plugins.lua` are just dependencies for these.
