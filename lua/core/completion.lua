@@ -59,14 +59,27 @@ cmp.setup.cmdline(':', {
 -- Add/Configure language servers here
 local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
 
-local lsp = require 'lspconfig'
-lsp.tsserver.setup { capabilities = capabilities }
-lsp.rust_analyzer.setup { capabilities = capabilities }
-
-
 
 -- Initialize easy installer
 local lsp_installer = require 'nvim-lsp-installer'
+
+-- Install some servers before trying to set things up
+-- Rust
+local ok, rust_analyzer = lsp_installer_servers.get_server('rust_analyzer')
+if ok then
+    if not rust_analyzer:is_installed() then
+        rust_analyzer:install()
+    end
+end
+
+-- Lua
+local ok, sumneko_lua = lsp_installer_servers.get_server('sumneko_lua')
+if ok then
+    if not sumneko_lua:is_installed() then
+        sumneko_lua:install()
+    end
+end
+
 
 -- Automatically setup newly installed server
 -- for the file that's currently opened
@@ -77,3 +90,10 @@ lsp_installer.on_server_ready(function(server)
     vim.cmd [[ do User LspAttachBuffers ]]
 end)
 
+
+
+-- Bootstrap the installed servers
+local lsp = require 'lspconfig'
+lsp.tsserver.setup { capabilities = capabilities }
+lsp.sumneko_lua.setup { capabilities = capabilities }
+lsp.rust_analyzer.setup { capabilities = capabilities }
