@@ -6,7 +6,6 @@
 <h1 align="center">oni</h1>
 
 <p align="center">Personal nvim configuration structure and documentation. An ever growing list of cool things that can be done with nvim...</p>
-<p align="center"><b>⚠️ this file is auto-generated ⚠️</b></p>
 <br/><br/>
 
 ## Directory Structure
@@ -37,8 +36,9 @@ A lot of plugins... Here are the links for the most _general_ ones, the rest in 
 - [`telescope.nvim`](https://github.com/nvim-telescope/telescope.nvim) - Fuzzy finder for literally anything
 - [`nvim-tree.lua`](https://github.com/kyazdani42/nvim-tree.lua) - Pretty file browser
 - [`nvim-hardline`](https://github.com/ojroques/nvim-hardline) - Status line at the bottom of the editor
+- [`nvim-lsp-installer`](https://github.com/williamboman/nvim-lsp-installer) - Install new completion servers with `:LspInstall <server>`, some are installed automatically in `lua/core/completion.lua`
 
-Honorable mentions: [`lspkind-nvim`](https://github.com/onsails/lspkind-nvim), [`nvim-lsp-installer`](https://github.com/williamboman/nvim-lsp-installer)
+Honorable mentions: [`lspkind-nvim`](https://github.com/onsails/lspkind-nvim),
 
 
 <br/>
