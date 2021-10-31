@@ -62,10 +62,11 @@ local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protoco
 
 -- Initialize easy installer
 local lsp_installer = require 'nvim-lsp-installer'
+local servers = require 'nvim-lsp-installer.servers'
 
 -- Install some servers before trying to set things up
 -- Rust
-local ok, rust_analyzer = lsp_installer_servers.get_server('rust_analyzer')
+local ok, rust_analyzer = servers.get_server('rust_analyzer')
 if ok then
     if not rust_analyzer:is_installed() then
         rust_analyzer:install()
@@ -73,7 +74,7 @@ if ok then
 end
 
 -- Lua
-local ok, sumneko_lua = lsp_installer_servers.get_server('sumneko_lua')
+local ok, sumneko_lua = servers.get_server('sumneko_lua')
 if ok then
     if not sumneko_lua:is_installed() then
         sumneko_lua:install()
