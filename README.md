@@ -14,7 +14,7 @@
 	- `init.lua` - Basic _vim_ configuration and main entrypoint
 	- `lua` - Directory for all modules
 		- `core` - Directory for all _basic_ modules that make everything work
-			- `completion.lua`: This is where are the language servers are setup and configured.
+			- `completion.lua`: This is where all the language servers are setup and configured.
 			- `keys.lua`: All the key mappings
 			- `plugins.lua`: All Packer configuration together with all #2 Plugins that should be installed, this includes themes.
 			- `tree-sitter.lua`: Tree-Sitter configuration. More language servers for nicer syntax highlighting.
