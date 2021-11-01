@@ -39,7 +39,7 @@ A lot of plugins... Here are the links for the most _general_ ones, the rest in 
 - [`nvim-hardline`](https://github.com/ojroques/nvim-hardline) - Status line at the bottom of the editor
 - [`nvim-lsp-installer`](https://github.com/williamboman/nvim-lsp-installer) - Install new completion servers with `:LspInstall <server>`, some are installed automatically in `lua/core/completion.lua`
 
-Honorable mentions: [`lspkind-nvim`](https://github.com/onsails/lspkind-nvim),
+Honorable mentions: [`lspkind-nvim`](https://github.com/onsails/lspkind-nvim), [`delimitMate`](https://github.com/Raimondi/delimitMate)
 
 
 <br/>
