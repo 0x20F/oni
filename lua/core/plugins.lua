@@ -85,5 +85,8 @@ packer.startup(function()
     -- Status line
     use 'ojroques/nvim-hardline'
 
+    -- Automatic closing of parenthesis, brackets, etc.
+    use 'Raimondi/delimitMate'
+
     end
 )
