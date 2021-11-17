@@ -44,6 +44,7 @@ Honorable mentions: [`lspkind-nvim`](https://github.com/onsails/lspkind-nvim), [
 
 <br/>
 
+
 ## Key Bindings
 **Leader** is _space_ so wherever you see `SPC` think of that.
 
